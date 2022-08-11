@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+.quiz-app {
+    margin: 20px auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+.quiz-info {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+}
+
+.quiz-info .category {
+    flex: 1;
+}
+
+.quiz-info .count {
+    flex: 1;
+    text-align: right;
+}
+
+.quiz-app .quiz-area {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.quiz-app .answers-area {
+    padding: 20px;
+    background-color: white;
+}
+
+.quiz-app .answers-area .answer {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f8f9;
+}
+
+.quiz-app .answers-area .answer:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.quiz-app .answers-area .answer input[type="radio"]:checked+label {
+    color: #0075ff;
+}
+
+.quiz-app .answers-area .answer label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -2;
+}
+
+.quiz-app .submit-button {
+    color: white;
+    background-color: #0075ff;
+    display: block;
+    width: 92%;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 15px auto
+}
+
+.quiz-app .submit-button:focus {
+    outline: none;
+}
+
+.quiz-app .submit-button:hover {
+    background-color: #2765ab;
+}
+
+.quiz-app .bullets {
+    border-top: 1px solid #dfdfdf;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.quiz-app .bullets .spans {
+    flex: 1;
+    display: flex;
+}
+
+.quiz-app .bullets .spans span {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.quiz-app .bullets .spans .on {
+    background-color: #0075ff;
+}
+.quiz-app .results  {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+
+
+}
+
+.quiz-app .results span {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.quiz-app .results .bad {
+    color: #dc0a0a;
+}
+
+.quiz-app .results .good {
+    color: #009688;
+}
+
+.quiz-app .results .perfect {
+    color: #0075ff;
+}
